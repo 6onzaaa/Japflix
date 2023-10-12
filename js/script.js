@@ -49,8 +49,9 @@ function showMovies(movies){
         }
         let contenido = document.createElement("li");
         contenido.className = "list-group-item"
-        contenido.innerHTML = `<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop${movies[i].id}" aria-controls="offcanvasTop">${movies[i].title}-${movies[i].tagline} </button>
-
+        contenido.innerHTML = ` 
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop${movies[i].id}" aria-controls="offcanvasTop">${movies[i].title} - ${movies[i].tagline} </button>
+        
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop${movies[i].id}" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasTopLabel">${movies[i].title}</h5>
